@@ -1,0 +1,199 @@
+body { /*Padronizando o corpo da p�gina*/
+	margin: 0;
+	font-family: Arial;
+	font-size: 12px;
+}
+
+/*Topo 1� Retangulo*/
+.topo { /*Estilizando a div do topo (onde fica campo de pesquisa)*/ 
+	background-color: #333;
+	color: #fff;
+}
+.container {
+	width: 100%; /*Utilizado para Layout Responsivo, para nao criar barra de rolagem, vai se adaptando ao tamanho da tela.*/
+	max-width: 1040px;
+	height: 30px;
+	margin: auto;
+}
+.containerleft { /*Estilizando nav do topo*/
+	width: 50%;
+	float: left;
+}
+.containerleft ul { /*Estilizando lista de navega��o do topo*/
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.containerleft li { /*Estilizando os items(op��es) da lista de navega��o*/
+	float: left;
+	line-height: 30px;
+	margin-left: 8px;
+	margin-right: 8px;
+}
+.containerleft li a { /*Tirando formato padr�o de link dos meus items da lista de navega��o, (PODERIA FAZER UM RESET NO TOPO DO CSS PARA TRATAR ISTO)*/
+	text-decoration: none;
+	color: #fff;
+}
+.containerleft li .ativo { /*Estilizando o p�gina selecionada*/
+	color: #1E90FF;
+}
+.containerright { /*Estilizando nav do lado direito*/
+	width: 50%;
+	float: right;
+	text-align: right;
+	margin-top: 0.2%; /*aproximadamente 2px*/
+}
+.containerbusca { /*Estilizando campo de buscar noticias*/
+	width: 22%;
+	height: 20px;
+	outline: 0; /*n�o acender contorno em volta*/
+}
+
+.containerright input { /*Estilizando o campo de busca*/
+	float: right;
+}
+.containerright img { /*Estilizando o espa�o entre os icones ao lado do campo de busca*/
+	margin: 0 0.9%;
+	
+}
+
+/*Banner 2� Ret�ngulo*/
+.containerdois {
+	height: 95px;
+	color: #000;
+}
+.containerdoisinterno {
+	width: 100%; /*Utilizado para Layout Responsivo, para nao criar barra de rolagem, vai se adpanto ao tamanho da tela.*/
+	max-width: 1040px;
+	height: 95px;
+	margin: auto;
+}
+.menu img {
+	vertical-align: middle; /*colocando as setinhas do menu no lugar certo.*/
+}
+.logo {
+	width: 230px; /*m�ximo da largura de um celular � 320px; procurar uma margem de 320px de tudo dentro do site para div*/
+	height: 90px;
+	float: left;
+	margin-top: 5px;
+}
+.containerdois .banner { /*nao direto .banner por que tera outros banners no site com a mesma classe.*/
+	width: 650px;
+	height: 80px;
+	float: right;
+	margin-top: 7px;	/*95 - 80 = 15 / 2 = 7.5 = 7 -> para centralizar o banner, onde 95 = altura toral da div, 80 � a altura do banner, 15 � o que sobra de espa�o, 2 � a parte superior e inferior
+	e 7 � a margem superior e inferior.*/
+}
+/*MENU 3� retangulo*/
+
+.menu {
+	height: 40px;
+	background-color: #1E90FF;
+}
+.menuint{
+	width: 100%;
+	max-width: 1040px;
+	height: 40px;
+	margin: auto;
+
+}
+.menuint li:hover {
+	background-color: #4682B4;
+}
+.menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+}
+.menu li {
+
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	margin-right: 15px;
+	margin-left: 8px;
+}
+.menu li a {
+	text-decoration: none;
+	padding: 10px;
+	color: #fff;
+}
+.menu li:hover .submenu{ /*para criar o menu dropdown, quando passar o mouse no meu menu o submenu vai aparecer.*/
+	display: block;
+}
+.submenu {
+	width: 150px;
+	background-color: #1E90FF;
+	position: absolute;
+	z-index: 1;
+	display: none;
+}
+.submenuitem {
+	height: 30px;
+	line-height: 30px;
+	width: 140px;
+	padding-left: 10px;
+}
+.submenuitem:hover {
+	background-color: #4682B4;
+}
+
+.containerfooter {
+	width: 100%; /*Utilizado para Layout Responsivo, para nao criar barra de rolagem, vai se adaptando ao tamanho da tela.*/
+	max-width: 1040px;
+	height: 100px;
+	margin: auto;
+}
+footer{
+	background-color: #333;
+	color: #fff
+}
+.blue {
+	color: #1E90FF;
+}
+footer .containerinternorodape {
+	width: 40%;
+	position: relative;
+	float: left;
+	margin-right: 5%;
+}
+footer .footerimg{
+	width: auto;
+	position: relative;
+	float: center;
+
+}
+footer img, footer p {
+		margin-top: 25px;
+}
+footer .footerdata{
+	width: auto;
+	position: relative;
+	float: right;
+}
+p {
+    text-align: justify;
+    text-indent: 20pt;
+}
+article {
+    margin-bottom: 100px;
+}
+article h1 {
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #1E90FF;
+    padding: 5px;
+    margin: 0px;
+}
+article h2 {
+    font-size: 13pt;
+    color: #ffffff;
+    margin: 10px 0 5px 0;
+}
+
+img_dir{
+    display: block;
+    float: right;
+    margin-left: 50px;
+}

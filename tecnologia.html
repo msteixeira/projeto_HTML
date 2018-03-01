@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta charset="UTF-8" />
+	<meta name="description" content="Projeto Portal de Notícias" />
+	<meta name="author" content="Os melhores alunos de 2017, 2018 e 2019" />
+	<meta name="robots" content="index, follow" />
+	<!--indexar o index e seguir os links para novas paginas.-->
+	<title>Portal de Notícias</title>
+	<link rel="icon" href="assets/images/R7.ico" />
+	<link href="assets/css/tecnologia.css" rel="stylesheet" />
+	<script type="text/javascript" src="assets/js/script.js"></script>
+</head>
+
+<body onload="date_time('date_time')">
+	<header>
+		<!-- aqui em baixo é o menu de fundo preto com a barra de pesquisa.-->
+		<div class="topo">
+			<div class="container">
+				<div class="containerleft">
+					<nav>
+						<ul>
+							<li>
+								<a href="#" class="ativo">Home</a>
+							</li>
+							<li>
+								<a href="#">Quem Somos</a>
+							</li>
+							<li>
+								<a href="#">Anúncie Aqui</a>
+							</li>
+							<li>
+								<a href="#">Contato</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="containerright">
+					<input type="image" src="assets/images/lupa.png" border="0" width="26" height="26" />
+					<!--Necessário a inversao da ordem no html, por que quando aplica a propriedade float no css de menu eles tendem a ficar na ordem inversa :da direita para esquerda.-->
+					<input type="text" name="busca" class="containerbusca" placeholder="Buscar notícias..." />
+					<!--flatIcon.com = icones bons para baixar.-->
+					<a href="">
+						<img src="assets/images/youtube.png" border="0" width="26" height="26">
+					</a>
+					<a href="">
+						<img src="assets/images/twitter.png" border="0" width="26" height="26">
+					</a>
+					<a href="">
+						<img src="assets/images/facebook.png" border="0" width="26" height="26">
+					</a>
+					<a href="">
+						<img src="assets/images/googleplus.png" border="0" width="26" height="26">
+					</a>
+					<a href="">
+						<img src="assets/images/rss.png" border="0" width="26" height="26">
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="containerdois">
+			<div class="containerdoisinterno">
+				<div class="logo">
+					<img src="assets/images/logo.png" border="0" width="230" />
+				</div>
+				<div class="banner">
+					<img src="assets/images/banner_topo.jpeg" border="0" width="650" height="80" />
+				</div>
+			</div>
+		</div>
+		<div class="menu">
+			<div class="menuint">
+				<ul id="menu">
+					<li>
+						<a href="#">Notícias</a>
+						<img src="assets/images/arrowdown.png" width="12" border="0" />
+						<div class="submenu">
+							<a href="#">
+								<div class="submenuitem">
+									Economia
+								</div>
+							</a>
+							<a href="#">
+								<div class="submenuitem">
+									Rio de Janeiro
+								</div>
+							</a>
+							<a href="#">
+								<div class="submenuitem">
+									São Paulo
+								</div>
+							</a>
+							<a href="#">
+								<div class="submenuitem">
+									Mundo
+								</div>
+							</a>
+						</div>
+					</li>
+					<li>
+						<a href="#">Entretenimento</a>
+						<img src="assets/images/arrowdown.png" width="12" border="0" />
+						<div class="submenu">
+							<a href="#">
+								<div class="submenuitem">
+									Filmes &amp Séries
+								</div>
+							</a>
+							<a href="#">
+								<div class="submenuitem">
+									Jogos
+								</div>
+							</a>
+						</div>
+					</li>
+					<li>
+						<a href="#">Esportes</a>
+						<img src="assets/images/arrowdown.png" width="12" border="0" />
+						<div class="submenu">
+							<a href="#">
+								<div class="submenuitem">
+									Futebol
+								</div>
+							</a>
+							<a href="#">
+								<div class="submenuitem">
+									UFC
+								</div>
+							</a>
+						</div>
+					</li>
+					<li>
+						<a href="#">Técnologia</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="container">
+			
+			<h1>Lançamento de Novas Tecnologias no mercado.</h1>
+                
+            <p>Vejam as novas tecnologias lançadas na ultíma feira de tecnoligia digital nos Estados Unidos, no estado da California.</p>
+
+            <article>
+                <header>
+                    <h1>Teste</h1>
+                </header>
+                <p>Texto/conteúdo teste.</p>
+                <img src="./assets/images/atencao-teste.jpg" alt="Teste"/>
+            </article>
+
+            <article>
+                <header>
+                    <h1>Teste</h1>
+                </header>
+                <p>Texto/conteúdo teste.</p>
+                <img src="./assets/images/atencao-teste.jpg" alt="Teste"/>
+            </article>
+
+            <article>
+                <header>
+                    <h1>Teste</h1>
+                </header>
+                <p>Texto/conteúdo teste.</p>
+                <img src="./assets/images/atencao-teste.jpg" alt="Teste"/>
+            </article>
+
+            <article>
+                <header>
+                    <h1>Teste</h1>
+                </header>
+                <p>Texto/conteúdo teste.</p>
+                <img src="./assets/images/atencao-teste.jpg" alt="Teste"/>
+            </article>
+		</div>
+	</main>
+	<footer>
+		<div class="containerfooter">
+			<div class="containerinternorodape">
+				<p>&copy Copyright Politécnico 2018 - O seu PORTAL DE NOTÍCIAS</p>
+				<p><span class="blue">Cadastre-se</span> ou faça o <span class="blue">Login</span> no site.</p>
+			</div>
+			<div class="footerimg">
+				<img src="assets/images/R7.png" width="56"/>
+			</div>
+			<div class="footerdata">
+				<span id="date_time"></span>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>
