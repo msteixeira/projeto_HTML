@@ -1,10 +1,10 @@
-body { /*Padronizando o corpo da p�gina*/
+body { /*Padronizando o corpo da página*/
 	margin: 0;
 	font-family: Arial;
 	font-size: 12px;
 }
 
-/*Topo 1� Retangulo*/
+/*Topo 1º Retangulo*/
 .topo { /*Estilizando a div do topo (onde fica campo de pesquisa)*/ 
 	background-color: #333;
 	color: #fff;
@@ -19,22 +19,22 @@ body { /*Padronizando o corpo da p�gina*/
 	width: 50%;
 	float: left;
 }
-.containerleft ul { /*Estilizando lista de navega��o do topo*/
+.containerleft ul { /*Estilizando lista de navegação do topo*/
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
-.containerleft li { /*Estilizando os items(op��es) da lista de navega��o*/
+.containerleft li { /*Estilizando os items(opções) da lista de navegação*/
 	float: left;
 	line-height: 30px;
 	margin-left: 8px;
 	margin-right: 8px;
 }
-.containerleft li a { /*Tirando formato padr�o de link dos meus items da lista de navega��o, (PODERIA FAZER UM RESET NO TOPO DO CSS PARA TRATAR ISTO)*/
+.containerleft li a { /*Tirando formato padrão de link dos meus items da lista de navegação, (PODERIA FAZER UM RESET NO TOPO DO CSS PARA TRATAR ISTO)*/
 	text-decoration: none;
 	color: #fff;
 }
-.containerleft li .ativo { /*Estilizando o p�gina selecionada*/
+.containerleft li .ativo { /*Estilizando o página selecionada*/
 	color: #1E90FF;
 }
 .containerright { /*Estilizando nav do lado direito*/
@@ -46,18 +46,18 @@ body { /*Padronizando o corpo da p�gina*/
 .containerbusca { /*Estilizando campo de buscar noticias*/
 	width: 22%;
 	height: 20px;
-	outline: 0; /*n�o acender contorno em volta*/
+	outline: 0; /*não acender contorno em volta*/
 }
 
 .containerright input { /*Estilizando o campo de busca*/
 	float: right;
 }
-.containerright img { /*Estilizando o espa�o entre os icones ao lado do campo de busca*/
+.containerright img { /*Estilizando o espaço entre os icones ao lado do campo de busca*/
 	margin: 0 0.9%;
 	
 }
 
-/*Banner 2� Ret�ngulo*/
+/*Banner 2º Retângulo*/
 .containerdois {
 	height: 95px;
 	color: #000;
@@ -72,7 +72,7 @@ body { /*Padronizando o corpo da p�gina*/
 	vertical-align: middle; /*colocando as setinhas do menu no lugar certo.*/
 }
 .logo {
-	width: 230px; /*m�ximo da largura de um celular � 320px; procurar uma margem de 320px de tudo dentro do site para div*/
+	width: 230px; /*máximo da largura de um celular é 320px; procurar uma margem de 320px de tudo dentro do site para div*/
 	height: 90px;
 	float: left;
 	margin-top: 5px;
@@ -81,23 +81,22 @@ body { /*Padronizando o corpo da p�gina*/
 	width: 650px;
 	height: 80px;
 	float: right;
-	margin-top: 7px;	/*95 - 80 = 15 / 2 = 7.5 = 7 -> para centralizar o banner, onde 95 = altura toral da div, 80 � a altura do banner, 15 � o que sobra de espa�o, 2 � a parte superior e inferior
-	e 7 � a margem superior e inferior.*/
+	margin-top: 7px;	/*95 - 80 = 15 / 2 = 7.5 = 7 -> para centralizar o banner, onde 95 = altura toral da div, 80 é a altura do banner, 15 é o que sobra de espaço, 2 é a parte superior e inferior
+	e 7 é a margem superior e inferior.*/
 }
-/*MENU 3� retangulo*/
+/*MENU 3º retangulo*/
 
 .menu {
 	height: 40px;
 	background-color: #1E90FF;
 }
-.menuint{
+.menuinterno{
 	width: 100%;
 	max-width: 1040px;
-	height: 40px;
 	margin: auto;
 
 }
-.menuint li:hover {
+.menuinterno li:hover {
 	background-color: #4682B4;
 }
 .menu ul {
@@ -107,7 +106,7 @@ body { /*Padronizando o corpo da p�gina*/
 
 }
 .menu li {
-
+	padding: 0 10px;
 	float: left;
 	height: 40px;
 	line-height: 40px;
@@ -116,11 +115,11 @@ body { /*Padronizando o corpo da p�gina*/
 }
 .menu li a {
 	text-decoration: none;
-	padding: 10px;
 	color: #fff;
 }
 .menu li:hover .submenu{ /*para criar o menu dropdown, quando passar o mouse no meu menu o submenu vai aparecer.*/
 	display: block;
+
 }
 .submenu {
 	width: 150px;
@@ -139,15 +138,213 @@ body { /*Padronizando o corpo da p�gina*/
 	background-color: #4682B4;
 }
 
-.containerfooter {
+/*ULTIMAS NOTICIAS 4º Retângulo*/
+.ultimasnoticias {
+	height: 40px;
+}
+.ultimasnoticiasinterna {
+	width: 100%;
+	max-width: 1040px;
+	height: 40px; /*50 px, necessario para calcular o meio*/
+	margin: auto;
+}
+.ultnoticiasarea{
+	height: 28px;
+	border: 1px solid #ccc;
+	margin-top: 10px; /*2px da borda, 28 de altura = 30, logo 50 - 30 = 20 / 2 = 10*/
+}
+.ultnoticiastitulo {
+	background-color: #1E90FF;
+	color: #fff;
+	height: 28px;
+	line-height: 28px;
+	padding-left: 10px;
+	padding-right: 10px;
+	display: inline-block; /*utilizado para nao pegar fundo azul em toda a div ultnoticiasarea*/
+	font-size: 16px;
+	box-shadow: 0 0 10px #000;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.ultnoticiasnoticias {
+	color: #000;
+	height: 28px;
+	line-height: 28px;
+	padding-left: 5px;	
+	display: inline-block;
+}
+
+/*Bolinhas do slideshow*/
+
+.leftside {
+	width: 753px;
+	float: left;
+}
+.containerint {
+	width:100%;
+	max-width:1040px;
+	margin:auto;
+}
+
+.rightside {
+	width:275px;
+	min-height:200px;
+	float:right;
+	margin-left:12px;
+}
+.widget {
+	background-color: #fff;
+	/*border: 1px solid #ccc;*/
+	margin-bottom: 10px;
+}
+
+.widget_titulo {
+	height: 30px;
+	line-height: 30px;
+	background-color: #eee;
+	border-bottom: 1px solid #ccc;
+	padding-left: 5px;
+	font-size: 14px;
+
+}
+.widget_conteudo {
+	text-align: center;
+	padding: 5px 0;
+}
+.noticia_item{
+	font-size: 14px;
+	margin: 0 10px;
+	padding: 10px 0;
+	text-align: left;
+	border-bottom: 1px solid #ccc;
+}
+.noticia_item a {
+	text-decoration: none;
+	color: #000;
+}
+.leftside {
+	width: 753px;
+	float: left;
+}
+.slideshow {
+	height: 335px;
+	background-color: #ccc;
+	overflow: hidden; /*se transbordar ele esconde, necessario para pode criar o deslize. valroes = auto, scroll, o scrrol usa barra de rolagem*/
+	margin-bottom: 20px;
+}
+.slideshowarea {
+	width: 10000px;
+	height: 335px; /*definir largura absurda por que o layout vai ser responsivo e o javascript vai entrar em ação fazendo que todas imagens fica do lado uma da outra e o java script vai só passar.*/
+	background-color: #ddd;
+	transition: all 1s; /*o javascript trocando o slide e o css fazendo a transição da troca de 1 em 1 segundo.*/
+}
+.slide {
+	height: 335px;
+	float: left;
+	background-repeat: no-repeat; /*não se repetir a imagem dentro da div*/
+	background-position: center; /*posicionar a imagem no centro da div*/
+	background-size: cover; /*dimensionando o tamanho para poder caber dentro da div inteira*/
+}
+.slideinfo {
+	height: 70px;
+	background-image: url('../images/slideshow_bg.png');
+	background-size: auto 70px;
+	margin-top: 265px; /*265 porque o slideshoware tem 335 px de altura e p slide info 70, logo 70 - 335 = 265*/
+}
+.slideinfo_titulo {
+	font-size: 20px;
+	color: #fff;
+	padding-top: 15px;
+	padding-left: 20px;
+}
+.slideinfo_subtitulo {
+	font-size: 13px;
+	color: #fff;
+	padding-left: 20px;
+}
+.slidebolinhas {
+	position: absolute;
+	width: 200px;
+	height: 20px;
+}
+.bolinhas {
+	width: 10px;
+	height: 10px;
+	float: left;
+	margin-right: 5px;
+	cursor: pointer;
+	background-color: #4682B4;
+	border-radius: 5px;
+}
+.noticiaarea1 {
+	width: 430px;
+	float: left;
+	height: 420px;
+}
+.noticiaarea2 {
+	width: 320px; /*751 - 430*/
+	height: 420px;
+	float: left;
+	
+}
+.noticiaimg {
+	width: 80px;
+	height: 80px;
+	border: 1px solid #ccc;
+	padding: 3px;
+	float: left;
+}
+.noticiatitulo {
+	margin-left: 6px;
+	font-size: 16px;
+	float: left;
+	width: 226px; /*320 da noticia area - 6 do margin left - 2 da borda - 86 da imagem = 226px para poder ficar certo.*/
+	color: #000;
+}
+.noticiaitem {
+	text-align: left;
+	height: 88px;/*Definindo a altura para nao ficar quebrada e fora da div.height: 80px da img + 6 px de espaçamentos + 2 px das bordas;*/
+	margin-top: 7px;
+	margin-bottom: 7px;
+}
+.noticiainfo {
+	font-size: 12px;
+	margin-left: 6px;
+	color: #999;
+}
+.noticiabig {
+	margin-left: 16px;
+}
+.noticiabig .noticiaimg{
+	width: 384px;
+	height: 222px;
+
+}
+.noticiabig .noticiaimg img{
+	width: 384px;
+	height: 222px;
+
+}
+.noticiabig .noticiatitulo{
+	font-size: 30px;
+	width: 384px;
+
+}
+.noticiabig .noticiainfo {
+		clear:both;
+}
+/*========RODAPÉ=============*/
+footer .containerfooter {
 	width: 100%; /*Utilizado para Layout Responsivo, para nao criar barra de rolagem, vai se adaptando ao tamanho da tela.*/
 	max-width: 1040px;
 	height: 100px;
 	margin: auto;
+	
 }
 footer{
+	clear: both;
 	background-color: #333;
-	color: #fff
+	color: #fff;
 }
 .blue {
 	color: #1E90FF;
@@ -171,29 +368,4 @@ footer .footerdata{
 	width: auto;
 	position: relative;
 	float: right;
-}
-p {
-    text-align: justify;
-    text-indent: 20pt;
-}
-article {
-    margin-bottom: 100px;
-}
-article h1 {
-    font-size: 15px;
-    color: #ffffff;
-    background-color: #1E90FF;
-    padding: 5px;
-    margin: 0px;
-}
-article h2 {
-    font-size: 13pt;
-    color: #ffffff;
-    margin: 10px 0 5px 0;
-}
-
-img_dir{
-    display: block;
-    float: right;
-    margin-left: 50px;
 }

@@ -15,7 +15,7 @@
 	<script type="text/javascript" src="assets/js/script.js"></script>
 </head>
 
-<body onload="date_time('date_time')">
+<body onload="date_time('date_time'), passarSlide()">
 	<header>
 		<!-- aqui em baixo é o menu de fundo preto com a barra de pesquisa.-->
 		<div class="topo">
@@ -72,7 +72,7 @@
 			</div>
 		</div>
 		<div class="menu">
-			<div class="menuint">
+			<div class="menuinterno">
 				<ul id="menu">
 					<li>
 						<a href="#">Notícias</a>
@@ -132,51 +132,231 @@
 							</a>
 						</div>
 					</li>
-					<li>
+					<!-- <li>
 						<a href="#">Técnologia</a>
-					</li>
+					</li> -->
 				</ul>
 			</div>
 		</div>
 	</header>
 	<main>
-		<div class="container">
-			
-			<h1>Lançamento de Novas Tecnologias no mercado.</h1>
-                
-            <p>Vejam as novas tecnologias lançadas na ultíma feira de tecnoligia digital nos Estados Unidos, no estado da California.</p>
+		<div class="ultimasnoticias">
+			<div class="ultimasnoticiasinterna">
+				<div class="ultnoticiasarea">
+					<div class="ultnoticiastitulo">ÚLTIMAS NOÍTICIAS</div>
+					<div class="ultnoticiasnoticias">Lutador de UFC perde o cinturão e quer revanche.</div>
+				</div>
+			</div>
+		</div>
+		<div class="container"> 
+			<div class="containerinterno">
+				<div class="leftside">
+					<!-- <div class="slideshow" id="slideshow"> <!--as bolinhas tem que ficar fora do slideshowarea por que tudo dentro do slide show area se meche e elas não podem se mecher.
+						<div class="slidebolinhas">
+							<div class="bolinhas" onclick="mudarSlide(0)"></div> <!--Assim que clicar na bolinha ele mudará o slide para referencia passada como parametro.
+							<div class="bolinhas" onclick="mudarSlide(1)"></div>
+							<div class="bolinhas" onclick="mudarSlide(2)"></div>
+							<div class="bolinhas" onclick="mudarSlide(3)"></div>
+						</div>
+						<div class="slideshowarea">
+							<a href="http://www.google.com.br/">
+								<div class="slide" style="background-image:url('assets/images/teclado.jpg')">
+								<div class="slideinfo">
+									<div class="slideinfo_titulo">Nova geração de teclados da lofree chega para conquistar ainda mais fãs</div>
+									<div class="slideinfo_subtitulo">A história por trás da criação desse teclado é legal até para quem não curte muito aparelhos vintage: a lofree, empresa responsável pela criação do teclado.</div>
+								</div>
+								</div>
+							</a>
+							<a href="http://www.youtube.com.br">
+								<div class="slide" style="background-image:url('assets/images/carro.jpg')">
+									<div class="slideinfo">
+										<div class="slideinfo_titulo">Qual será o impacto dos carros autônomos na nossa cultura?</div>
+										<div class="slideinfo_subtitulo">No meio de novembro, a área de sustentabilidade da Universidade de Columbia, nos Estados Unidos, reuniu líderes para discutir o futuro da mobilidade.</div>
+									</div>
+								</div>
+							</a>
+							<div class="slide" style="background-image:url('assets/images/googlenest.jpg')">
+								<div class="slideinfo">
+									<div class="slideinfo_titulo">Pode ser que vejamos em breve uma fusão entre Google e Nest</div>
+									<div class="slideinfo_subtitulo">A Nest foi ganhando fama com o passar dos anos e, em janeiro de 2014, o negócio foi comprado pela Google por US$ 3,2 bilhões.</div>
+								</div>
+							</div>
+							<div class="slide" style="background-image:url('assets/images/android.jpg')">
+								<div class="slideinfo">
+									<div class="slideinfo_titulo">Modificado! Android Auto passa por atualização e está de cara nova</div>
+									<div class="slideinfo_subtitulo">Mas, em uma atualização recente, o aplicativo passou por upgrades que capricharam na parte estética e melhoraram a interação com o motorista ou passageiro.</div>
+								</div>
+							</div>														
+						</div>
+					</div> -->
+					<div class="widget">
+						<div class="widget_titulo">TECNOLOGIA MUNDO A FORA.</div>
+						<div class="widget_conteudo">
+							<div class="noticiaarea1">
+								<div class="noticiaitem noticiabig">
+									<div class="noticiaimg">
+										<img src="assets/images/android.jpg" border="0" width="80" height="80">
+									</div>
+									<div class="noticiatitulo">Modificado! Android Auto passa por atualização e está de cara nova</div>
+									<div class="noticiainfo">A notícia é um formato de divulgação de um acontecimento por meios jornalísticos.</div>
+								</div>
+							<!-- </div>
+							<div class="noticiaarea3"> -->
+								<div class="noticiaitem noticiabig">
+									<div class="noticiaimg">
+										<img src="assets/images/google_experimento_musica.jpg" border="0" width="80" height="80">
+									</div>
+									<div class="noticiatitulo">Novo experimento do Google Chrome torna você um compositor de músicas</div>
+									<div class="noticiainfo">O Google Chrome acaba de ganhar um novo experimento que promete fazer muita gente perder as próximas horas do dia brincando de compositor.</div>
+								</div>
+							</div>
+							<div class="noticiaarea2">
+								<div class="noticiaitem">
+									<div class="noticiaimg">
+										<img src="assets/images/foto1.jpg" border="0" width="80" height="80">
+									</div>
+									<div class="noticiatitulo">Microsoft disponibiliza atualização KB4018314 para o Outlook 2010</div>
+                                    <div class="noticiainfo"><a href="https://noticias.r7.com/tecnologia-e-ciencia/baboo/microsoft-disponibiliza-atualizacao-kb4018314-para-o-outlook-2010-27022018" target="blank">Ler mais...</a></div>
+								</div>
+								<div class="noticiaitem">
+									<div class="noticiaimg">
+										<img src="assets/images/foto2.jpg" border="0" width="80" height="80">
+									</div>
+									<div class="noticiatitulo">Microsoft SQL Server Migration Assistant v7.7</div>
+									<div class="noticiainfo"><a href="https://noticias.r7.com/tecnologia-e-ciencia/baboo/microsoft-sql-server-migration-assistant-v77-27022018" target="blank">Ler mais...</a></div>
+								</div>
+								<div class="noticiaitem">
+									<div class="noticiaimg">
+										<img src="assets/images/foto3.jpg" border="0" width="80" height="80">
+									</div>
+									<div class="noticiatitulo">Veja o comparativo do novo Galaxy S9 com o iPhone X</div>
+									<div class="noticiainfo"><a href="https://noticias.r7.com/tecnologia-e-ciencia/veja-o-comparativo-do-novo-galaxy-s9-com-o-iphone-x-27022018" target="blank">Ler mais...</a></div>
+								</div>
+								<div class="noticiaitem">
+									<div class="noticiaimg">
+										<img src="assets/images/foto4.jpg" border="0" width="80" height="80">
+									</div>
+									<div class="noticiatitulo">Agentes russos hackearam abertura de Olimpíadas de Inverno, diz jornal</div>
+									<div class="noticiainfo"><a href="https://noticias.r7.com/tecnologia-e-ciencia/agentes-russos-hackearam-abertura-de-olimpiadas-de-inverno-diz-jornal-26022018" target="blank">Ler mais...</a></div>
+								</div>
+								<div class="noticiaitem">
+									<div class="noticiaimg">
+										<img src="assets/images/foto5.jpg" border="0" width="80" height="80">
+									</div>
+									<div class="noticiatitulo">Saiba quais os níveis de resistência à água e poeira do seu celular</div>
+									<div class="noticiainfo"><a href="https://noticias.r7.com/tecnologia-e-ciencia/fotos/saiba-quais-os-niveis-de-resistencia-a-agua-e-poeira-do-seu-celular-26022018#!/foto/1" target="blank">Ler mais...</a></div>
+								</div>
+								<div class="noticiaitem">
+									<div class="noticiaimg">
+										<img src="assets/images/foto6.jpg" border="0" width="80" height="80">
+									</div>
+									<div class="noticiatitulo">SanDisk lança novo cartão microSD com 400GB</div>
+									<div class="noticiainfo"><a href="https://noticias.r7.com/tecnologia-e-ciencia/baboo/sandisk-lanca-novo-cartao-microsd-com-400gb-26022018" target="blank">Ler mais...</a></div>
+								</div>
+								<div class="noticiaitem">
+									<div class="noticiaimg">
+										<img src="assets/images/foto7.jpg" border="0" width="80" height="80">
+									</div>
+									<div class="noticiatitulo">Microsoft disponibiliza versão atualizada do seu Kit de Desenvolvimento Quântico</div>
+									<div class="noticiainfo"><a href="https://noticias.r7.com/tecnologia-e-ciencia/baboo/microsoft-disponibiliza-versao-atualizada-do-seu-kit-de-desenvolvimento-quantico-26022018" target="blank">Ler mais...</a></div>
+								</div>
+								<div class="noticiaitem">
+									<div class="noticiaimg">
+										<img src="assets/images/foto8.jpg" border="0" width="80" height="80">
+									</div>
+									<div class="noticiatitulo">Microsoft Visual Studio 2017 v15.6 Preview 6</div>
+									<div class="noticiainfo"><a href="https://noticias.r7.com/tecnologia-e-ciencia/baboo/microsoft-visual-studio-2017-v156-preview-6-26022018" target="blank">Ler mais...</a></div>
+								</div>
+							</div>								
+							<div style="clear: both"></div>
+						</div>
+					</div>
+					<!-- <div class="widget">
+						<div class="widget_titulo">ESPORTES</div>
+						 <div class="widget_conteudo">
+							<div class="noticiaarea1">
+								<div class="noticiaitem noticiabig">
+									<div class="noticiaimg">
+										<img src="assets/images/imgfut.jpg" border="0" width="80" height="80">
+									</div>
+									<div class="noticiatitulo"><a href="esportes.html">Só os melhores! Confira todos os vencedores do prêmio The Best da Fifa</a></div>
+									<div class="noticiainfo">Os olhos do mundo do futebol ficaram voltados para Londres nesta segunda-feira (23). A capital da Inglaterra recebeu...</div>
+								</div>
+							</div>
+							<div class="noticiaarea2">
+								<div class="noticiaitem">
+									<div class="noticiaimg">
+										<img src="assets/images/goleirofut.jpg" border="0" width="80" height="80">
+									</div>
+									<div class="noticiatitulo">Melhor Goleiro</div>
+									<div class="noticiainfo">Os olhos do mundo do futebol ficaram voltados para Londres...</div>
+								</div>
+								<div class="noticiaitem">
+									<div class="noticiaimg">
+										<img src="assets/images/zidanefut.jpg" border="0" width="80" height="80">
+									</div>
+									<div class="noticiatitulo">Melhor Técnico</div>
+									<div class="noticiainfo">O melhor treinador do mundo em 2017 no futebol masculino foi, como esperado...</div>
+								</div>
+								<div class="noticiaitem">
+									<div class="noticiaimg">
+										<img src="assets/images/torcidafut.jpg" border="0" width="80" height="80">
+									</div>
+									<div class="noticiatitulo">Melhores Torcedores do ano</div>
+									<div class="noticiainfo">Uma das torcidas mais fanáticas do mundo foi merecidamente homenagiada...</div>
+								</div>
+								<div class="noticiaitem">
+									<div class="noticiaimg">
+										<img src="assets/images/mejogadorfut.jpg" border="0" width="80" height="80">
+									</div>
+									<div class="noticiatitulo">Melhor Jogador</div>
+									<div class="noticiainfo">Prevaleceu o que todos já esperavam...</div>
+								</div>								
+							</div>
+							<div style="clear: both"></div>
+						</div> -->
+					</div>
+				</div>
+				<div class="rightside">
+					<div class="widget">
+						<div class="widget_titulo">SOCIAL</div>
+						<div class="widget_conteudo">
+							<a href=""><img src="assets/images/youtube.png" border="0" width="26" height="26"></a>
+							<a href=""><img src="assets/images/twitter.png" border="0" width="26" height="26"></a>
+							<a href=""><img src="assets/images/facebook.png" border="0" width="26" height="26"></a>
+							<a href=""><img src="assets/images/googleplus.png" border="0" width="26" height="26"></a>
+							<a href=""><img src="assets/images/rss.png" border="0" width="26" height="26"></a>
+						</div>
+					</div>
+					<div class="widget">
+						<div class="widget_titulo">ÚLTIMAS NOTÍCIAS</div>
+						<div class="widget_conteudo">
+							<div class="noticia_item"><a href="#">
+								Documento tem validade de 180 dias. Segundo a assessoria de imprensa, durante esse período a empresa buscará um consenso com órgãos ambientia sobre termos do TAC questionado pelo Inea.</a>
+							</div>
+							<div class="noticia_item"><a href="#">
+								Evento ocorre nos dias 8 e 9 de dezembro e terá participação de Dan Lemmon, vencedor do Oscar 2017 de efeitos visuais, além de palestras e workshops.</a>
+							</div>
+							<div class="noticia_item"><a href="#">
+								Testes rápidos e distribuição de preservativos masculinos fazem parte das ações que serão realizadas no Posto de Saúde Lucas Esteves.</a>
+							</div>														
 
-            <article>
-                <header>
-                    <h1>Teste</h1>
-                </header>
-                <p>Texto/conteúdo teste.</p>
-                <img src="./assets/images/atencao-teste.jpg" alt="Teste"/>
-            </article>
-
-            <article>
-                <header>
-                    <h1>Teste</h1>
-                </header>
-                <p>Texto/conteúdo teste.</p>
-                <img src="./assets/images/atencao-teste.jpg" alt="Teste"/>
-            </article>
-
-            <article>
-                <header>
-                    <h1>Teste</h1>
-                </header>
-                <p>Texto/conteúdo teste.</p>
-                <img src="./assets/images/atencao-teste.jpg" alt="Teste"/>
-            </article>
-
-            <article>
-                <header>
-                    <h1>Teste</h1>
-                </header>
-                <p>Texto/conteúdo teste.</p>
-                <img src="./assets/images/atencao-teste.jpg" alt="Teste"/>
-            </article>
+						</div>
+					</div>
+					<div class="widget">
+						<div class="widget_titulo">PUBLICIDADE</div>
+						<div class="widget_conteudo">
+							<img src="assets/images/publicidade.jpg" border="0" width="275" height="275" />
+						</div>
+					</div>
+					<div class="widget">
+						<div class="widget_titulo">ENCONTRE-NOS NO FACEBOOK</div>
+						<div class="widget_conteudo">
+							<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fportalr7%2F&tabs&width=275&height=154&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="275" height="154" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+						</div>
+					</div>					
+				</div>
+			</div>
 		</div>
 	</main>
 	<footer>
@@ -194,5 +374,4 @@
 		</div>
 	</footer>
 </body>
-
 </html>

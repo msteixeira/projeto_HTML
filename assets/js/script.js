@@ -1,6 +1,6 @@
 var slideItem = 0;
-window.onload = function() {
-	setInterval(passarSldie, 5000); //geralmente em sites que vao para o ar, sera de 7000 a 10000
+function passarSlide() {
+	setInterval(passarSldie, 4000); //geralmente em sites que vao para o ar, sera de 7000 a 10000
 
     var slidewidth = document.getElementById("slideshow").offsetWidth;
     var objs = document.getElementsByClassName("slide");

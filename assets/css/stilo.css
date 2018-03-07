@@ -90,14 +90,13 @@ body { /*Padronizando o corpo da página*/
 	height: 40px;
 	background-color: #1E90FF;
 }
-.menuint{
+.menuinterno{
 	width: 100%;
 	max-width: 1040px;
-	height: 40px;
 	margin: auto;
 
 }
-.menuint li:hover {
+.menuinterno li:hover {
 	background-color: #4682B4;
 }
 .menu ul {
@@ -107,7 +106,7 @@ body { /*Padronizando o corpo da página*/
 
 }
 .menu li {
-
+	padding: 0 10px;
 	float: left;
 	height: 40px;
 	line-height: 40px;
@@ -116,11 +115,11 @@ body { /*Padronizando o corpo da página*/
 }
 .menu li a {
 	text-decoration: none;
-	padding: 10px;
 	color: #fff;
 }
 .menu li:hover .submenu{ /*para criar o menu dropdown, quando passar o mouse no meu menu o submenu vai aparecer.*/
 	display: block;
+
 }
 .submenu {
 	width: 150px;
@@ -139,15 +138,216 @@ body { /*Padronizando o corpo da página*/
 	background-color: #4682B4;
 }
 
-.containerfooter {
+/*ULTIMAS NOTICIAS 4º Retângulo*/
+.ultimasnoticias {
+	height: 40px;
+}
+.ultimasnoticiasinterna {
+	width: 100%;
+	max-width: 1040px;
+	height: 40px; /*50 px, necessario para calcular o meio*/
+	margin: auto;
+}
+.ultnoticiasarea{
+	height: 28px;
+	border: 1px solid #ccc;
+	margin-top: 10px; /*2px da borda, 28 de altura = 30, logo 50 - 30 = 20 / 2 = 10*/
+}
+.ultnoticiastitulo {
+	background-color: #1E90FF;
+	color: #fff;
+	height: 28px;
+	line-height: 28px;
+	padding-left: 10px;
+	padding-right: 10px;
+	display: inline-block; /*utilizado para nao pegar fundo azul em toda a div ultnoticiasarea*/
+	font-size: 16px;
+	box-shadow: 0 0 10px #000;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.ultnoticiasnoticias {
+	color: #000;
+	height: 28px;
+	line-height: 28px;
+	padding-left: 5px;	
+	display: inline-block;
+}
+
+/*Bolinhas do slideshow*/
+
+.leftside {
+	width: 753px;
+	float: left;
+}
+.containerint {
+	width:100%;
+	max-width:1040px;
+	margin:auto;
+}
+
+.rightside {
+	width:275px;
+	min-height:200px;
+	float:right;
+	margin-left:12px;
+}
+.widget {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	/*margin-bottom: 10px;*/
+	margin: 10px 300px 10px 300px;
+}
+
+.widget_titulo {
+	height: 30px;
+	line-height: 30px;
+	background-color: #eee;
+	border-bottom: 1px solid #ccc;
+	padding-left: 5px;
+	font-size: 14px;
+
+}
+.widget_conteudo {
+	text-align: center;
+	padding: 10px 0;
+	height: 1550px;
+}
+.noticia_item{
+	font-size: 14px;
+	margin: 0 10px;
+	padding: 10px 0;
+	text-align: left;
+	border-bottom: 1px solid #ccc;
+}
+.noticia_item a {
+	text-decoration: none;
+	color: #000;
+}
+.leftside {
+	width: 753px;
+	float: left;
+}
+.slideshow {
+	height: 335px;
+	background-color: #ccc;
+	overflow: hidden; /*se transbordar ele esconde, necessario para pode criar o deslize. valroes = auto, scroll, o scrrol usa barra de rolagem*/
+	margin-bottom: 20px;
+}
+.slideshowarea {
+	width: 10000px;
+	height: 335px; /*definir largura absurda por que o layout vai ser responsivo e o javascript vai entrar em ação fazendo que todas imagens fica do lado uma da outra e o java script vai só passar.*/
+	background-color: #ddd;
+	transition: all 1s; /*o javascript trocando o slide e o css fazendo a transição da troca de 1 em 1 segundo.*/
+}
+.slide {
+	height: 335px;
+	float: left;
+	background-repeat: no-repeat; /*não se repetir a imagem dentro da div*/
+	background-position: center; /*posicionar a imagem no centro da div*/
+	background-size: cover; /*dimensionando o tamanho para poder caber dentro da div inteira*/
+}
+.slideinfo {
+	height: 70px;
+	background-image: url('../images/slideshow_bg.png');
+	background-size: auto 70px;
+	margin-top: 265px; /*265 porque o slideshoware tem 335 px de altura e p slide info 70, logo 70 - 335 = 265*/
+}
+.slideinfo_titulo {
+	font-size: 20px;
+	color: #fff;
+	padding-top: 15px;
+	padding-left: 20px;
+}
+.slideinfo_subtitulo {
+	font-size: 13px;
+	color: #fff;
+	padding-left: 20px;
+}
+.slidebolinhas {
+	position: absolute;
+	width: 200px;
+	height: 20px;
+}
+.bolinhas {
+	width: 10px;
+	height: 10px;
+	float: left;
+	margin-right: 5px;
+	cursor: pointer;
+	background-color: #4682B4;
+	border-radius: 5px;
+}
+.noticiaarea1 {
+	width: 800px;/*430px;*/
+	float: left;
+	height: 280px;
+}
+.noticiaarea2 {
+	width: 800px; /*320px; /*751 - 430*/
+	height: 800px;
+	float: left;
+}
+.noticiaimg {
+	width: 250px;
+	height: 140px;
+	border: 1px solid #ccc;
+	padding: 3px;
+	float: left;
+}
+.noticiatitulo {
+	margin-top: 15px;
+	margin-left: 6px;
+	font-size: 20px;
+	float: left;
+	width: 300px; /*320 da noticia area - 6 do margin left - 2 da borda - 86 da imagem = 226px para poder ficar certo.*/
+	color: #000;
+}
+.noticiaitem {
+	text-align: left;
+	height: 150px;/*Definindo a altura para nao ficar quebrada e fora da div.height: 80px da img + 6 px de espaçamentos + 2 px das bordas;*/
+	/*margin-top: 7px;
+	margin-bottom: 7px;*/
+	margin: 7px 0px 7px 16px;
+}
+.noticiainfo {
+	font-size: 12px;
+	margin-left: 6px;
+	color: #999;
+}
+.noticiabig {
+	margin-left: 16px;
+}
+.noticiabig .noticiaimg{
+	width: 384px;
+	height: 222px;
+
+}
+.noticiabig .noticiaimg img{
+	width: 384px;
+	height: 222px;
+
+}
+.noticiabig .noticiatitulo{
+	font-size: 30px;
+	width: 384px;
+
+}
+.noticiabig .noticiainfo {
+		clear:both;
+}
+/*========RODAPÉ=============*/
+footer .containerfooter {
 	width: 100%; /*Utilizado para Layout Responsivo, para nao criar barra de rolagem, vai se adaptando ao tamanho da tela.*/
 	max-width: 1040px;
 	height: 100px;
 	margin: auto;
+	
 }
 footer{
+	clear: both;
 	background-color: #333;
-	color: #fff
+	color: #fff;
 }
 .blue {
 	color: #1E90FF;
