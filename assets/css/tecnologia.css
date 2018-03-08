@@ -110,8 +110,7 @@ body { /*Padronizando o corpo da página*/
 	float: left;
 	height: 40px;
 	line-height: 40px;
-	margin-right: 15px;
-	margin-left: 8px;
+	margin: auto;
 }
 .menu li a {
 	text-decoration: none;
@@ -176,9 +175,9 @@ body { /*Padronizando o corpo da página*/
 
 /*Bolinhas do slideshow*/
 
-.leftside {
+/*.leftside {
 	width: 753px;
-	float: left;
+	float: left;*/
 }
 .containerint {
 	width:100%;
@@ -293,6 +292,7 @@ body { /*Padronizando o corpo da página*/
 	border: 1px solid #ccc;
 	padding: 3px;
 	float: left;
+	
 }
 .noticiatitulo {
 	margin-left: 6px;
@@ -332,6 +332,9 @@ body { /*Padronizando o corpo da página*/
 }
 .noticiabig .noticiainfo {
 		clear:both;
+}
+.pagina_atual{
+	background-color: #4682B4;
 }
 /*========RODAPÉ=============*/
 footer .containerfooter {

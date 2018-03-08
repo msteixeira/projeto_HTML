@@ -59,13 +59,13 @@ body { /*Padronizando o corpo da página*/
 
 /*Banner 2º Retângulo*/
 .containerdois {
-	height: 120px;
+	height: 95px;
 	color: #000;
 }
 .containerdoisinterno {
 	width: 100%; /*Utilizado para Layout Responsivo, para nao criar barra de rolagem, vai se adpanto ao tamanho da tela.*/
 	max-width: 1040px;
-	height: 120px;
+	height: 95px;
 	margin: auto;
 }
 .menu img {
@@ -77,9 +77,9 @@ body { /*Padronizando o corpo da página*/
 	float: left;
 	margin-top: 5px;
 }
-.containerdois .radio{ /*nao direto .banner por que tera outros banners no site com a mesma classe.*/
+.containerdois .banner { /*nao direto .banner por que tera outros banners no site com a mesma classe.*/
 	width: 650px;
-	height: 200px;
+	height: 80px;
 	float: right;
 	margin-top: 7px;	/*95 - 80 = 15 / 2 = 7.5 = 7 -> para centralizar o banner, onde 95 = altura toral da div, 80 é a altura do banner, 15 é o que sobra de espaço, 2 é a parte superior e inferior
 	e 7 é a margem superior e inferior.*/
@@ -87,7 +87,6 @@ body { /*Padronizando o corpo da página*/
 /*MENU 3º retangulo*/
 
 .menu {
-	clear:both;
 	height: 40px;
 	background-color: #1E90FF;
 }
@@ -192,6 +191,7 @@ body { /*Padronizando o corpo da página*/
 	min-height:200px;
 	float:right;
 	margin-left:12px;
+	margin-right: 180px;
 }
 .widget {
 	background-color: #fff;
@@ -218,6 +218,8 @@ body { /*Padronizando o corpo da página*/
 	padding: 10px 0;
 	text-align: left;
 	border-bottom: 1px solid #ccc;
+	font-size: 18px;
+	
 }
 .noticia_item a {
 	text-decoration: none;
@@ -333,21 +335,6 @@ body { /*Padronizando o corpo da página*/
 .noticiabig .noticiainfo {
 		clear:both;
 }
-
-.radio {
-	width: 50%;
-	height: 200px;
-	background-image: url('../images/fundoradio.png');
-	background-size: 100%;
-
-	background-repeat: no-repeat;
-}
-.radio audio{
-	margin-top: 15%;
-	margin-left: 45%;
-	opacity: 0.3;
-}
-
 /*========RODAPÉ=============*/
 footer .containerfooter {
 	width: 100%; /*Utilizado para Layout Responsivo, para nao criar barra de rolagem, vai se adaptando ao tamanho da tela.*/

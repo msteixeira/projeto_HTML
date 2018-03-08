@@ -1,0 +1,27 @@
+.contesp {
+    width: 60%;
+    float: left;
+	background-color: #fff;
+    border: 1px solid #ccc;
+
+}
+
+.contesp h1 {
+    text-align: justify;
+    background-color: #fff;
+	border-bottom: 1px solid #ccc;
+    padding: 3px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.contesp p {
+    font-size: 130%;
+    text-align: justify;
+    padding: 3px;
+}
+
+.contesp h2 {
+    text-align: center;
+}
+
